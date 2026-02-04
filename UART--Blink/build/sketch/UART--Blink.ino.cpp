@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Blink\\UART--Blink.ino"
 /************************************************************************************************************
  🔹 SLAVE RP2040-Zero: CONTROL DE LED VIA UART DESDE PICO 🔹
   - Recibe comandos UART desde un Raspberry Pi Pico.
@@ -37,6 +39,11 @@
 
 #define LED_PIN 2
 
+#line 40 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Blink\\UART--Blink.ino"
+void setup();
+#line 60 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Blink\\UART--Blink.ino"
+void loop();
+#line 40 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Blink\\UART--Blink.ino"
 void setup()
 {
   pinMode(LED_PIN, OUTPUT);
@@ -93,3 +100,4 @@ void loop()
     }
   }
 }
+
