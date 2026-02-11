@@ -1,3 +1,4 @@
+#line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\.vscode\\c_cpp_properties.json"
 {
   "configurations": [
     {
@@ -5,7 +6,7 @@
       "includePath": [
         "C:\\Users\\Benutzer1\\Documents\\Arduino\\libraries/**",
         "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command/**",
-        "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\core/**",
+        "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\core/**",
         "C:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\include/**",
         "C:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\cores\\rp2040/**",
         "C:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\variants\\waveshare_rp2040_zero/**"
@@ -17,7 +18,7 @@
       "compilerArgs": [
         "C:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\tools\\pqt-gcc\\4.0.1-8ec9d6f/bin/arm-none-eabi-g++",
         "-I",
-        "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build/core",
+        "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build/core",
         "-c",
         "-Werror=return-type",
         "-Wno-psabi",
@@ -60,9 +61,9 @@
         "-DWIFICC=CYW43_COUNTRY_WORLDWIDE",
         "-IC:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\cores\\rp2040",
         "-IC:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\variants\\waveshare_rp2040_zero",
-        "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp",
+        "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp",
         "-o",
-        "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp.o"
+        "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp.o"
       ],
       "defines": [
         "USBD_PID=0x0003",

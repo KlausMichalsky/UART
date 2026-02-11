@@ -1,4 +1,4 @@
-c:\Users\Benutzer1\Documents\\#\ Github\ repositories\UART\UART--Command\build\core\wiring_shift.cpp.o: \
+C:\Users\Benutzer1\Documents\\#\ Github\ repositories\UART\UART--Command\build\core\wiring_shift.cpp.o: \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040\wiring_shift.cpp \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040/Arduino.h \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040/stdlib_noniso.h \

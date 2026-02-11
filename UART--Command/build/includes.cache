@@ -7,15 +7,15 @@
   },
   {
     "compile": {
-      "source_path": "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp",
-      "object_path": "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp.o",
-      "depfile_path": "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp.d"
+      "source_path": "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp",
+      "object_path": "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp.o",
+      "depfile_path": "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp.d"
     },
     "compile_task": {
       "args": [
         "C:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\tools\\pqt-gcc\\4.0.1-8ec9d6f/bin/arm-none-eabi-g++",
         "-I",
-        "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build/core",
+        "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build/core",
         "-c",
         "-Werror=return-type",
         "-Wno-psabi",
@@ -62,7 +62,7 @@
         "-DWIFICC=CYW43_COUNTRY_WORLDWIDE",
         "-IC:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\cores\\rp2040",
         "-IC:\\Users\\Benutzer1\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\4.5.2\\variants\\waveshare_rp2040_zero",
-        "c:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp",
+        "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\build\\sketch\\UART--Command.ino.cpp",
         "-o",
         "nul"
       ]

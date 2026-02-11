@@ -1,4 +1,4 @@
-c:\Users\Benutzer1\Documents\\#\ Github\ repositories\UART\UART--Command\build\core\SerialUART.cpp.o: \
+C:\Users\Benutzer1\Documents\\#\ Github\ repositories\UART\UART--Command\build\core\SerialUART.cpp.o: \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040\SerialUART.cpp \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040\SerialUART.h \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040/Arduino.h \

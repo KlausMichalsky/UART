@@ -1,4 +1,4 @@
-c:\Users\Benutzer1\Documents\\#\ Github\ repositories\UART\UART--Command\build\core\sdkoverride\inet_chksum.cpp.o: \
+C:\Users\Benutzer1\Documents\\#\ Github\ repositories\UART\UART--Command\build\core\sdkoverride\inet_chksum.cpp.o: \
  C:\Users\Benutzer1\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\4.5.2\cores\rp2040\sdkoverride\inet_chksum.cpp \
  C:/Users/Benutzer1/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/4.5.2/pico-sdk/lib/lwip/src/include/lwip/opt.h \
  C:/Users/Benutzer1/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/4.5.2/pico-sdk/lib/lwip/src/include/lwip/debug.h \

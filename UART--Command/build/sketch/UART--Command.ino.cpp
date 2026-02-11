@@ -1,6 +1,6 @@
 #line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
 // ========================================================================
-//               🔸 U A R T  -  C O M M A N D  ( S C A R A )🔸 
+//               🔸 U A R T  -  C O M M A N D  ( S C A R A )🔸
 // ========================================================================
 //  Archivo    : UART_Command.ino
 //  Autor      : Klaus Michalsky
@@ -40,105 +40,37 @@
 
 #include <Arduino.h>
 
-// DEFINICIÓN DE LA UART DE COMUNICACIÓN
-// =======================================================================
-#if defined(ARDUINO_ARCH_RP2040)
-#define CMD_SERIAL Serial1
-#else
-#define CMD_SERIAL Serial
-#endif
-
-// CONFIGURACIÓN DE DEPURACIÓN UART
-// =======================================================================
-#define DEBUG_UART 1 // cambiar a 0 cuando el codigo esta listo
-
-// PROTOTIPOS
-// =======================================================================
-void UART_Init();
-bool commandAvailable();
-String receiveCommand();
-void processCommand(const String &cmd);
-
-
-// =======================================================================
-// SETUP
-// =======================================================================
-#line 65 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
+#line 42 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
 void setup();
-#line 77 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
+#line 53 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
 void loop();
-#line 65 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
+#line 42 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\UART--Command.ino"
 void setup()
 {
-    UART_Init();
+    // USB para debug (opcional)
+    Serial.begin(115200);
 
-#if DEBUG_UART
-    Serial.println("Sistema listo -> Ingresar comando...");
-#endif
+    // UART hardware en pines 0 y 1
+    Serial1.setTX(0);
+    Serial1.setRX(1);
+    Serial1.begin(115200);
 }
 
-// =======================================================================
-// LOOP
-// =======================================================================
 void loop()
 {
-    if (commandAvailable())
+    if (Serial1.available())
     {
-        String cmd = receiveCommand();
-        processCommand(cmd);
-    }
-}
+        String cmd = Serial1.readStringUntil('\n');
+        cmd.trim();
 
-// INICIALIZACIÓN DE COMUNICACIÓN UART
-// =======================================================================
-void UART_Init()
-{
-#if DEBUG_UART
-    Serial.begin(115200);
-    unsigned long start = millis();
-    while (!Serial && millis() - start < 1000)
-    {
-        // espera segura
-    }
-    Serial.println("Debug UART lista!");
-#endif
-
-#if defined(ARDUINO_ARCH_RP2040)
-    CMD_SERIAL.setTX(0);
-    CMD_SERIAL.setRX(1);
-#endif
-
-    CMD_SERIAL.begin(115200);
-}
-
-// COMPROBACIÓN DE COMANDOS DISPONIBLES
-// =======================================================================
-bool commandAvailable()
-{
-    return CMD_SERIAL.available() > 0;
-}
-
-// LEER COMANDOS
-// =======================================================================
-String receiveCommand()
-{
-    String cmd = CMD_SERIAL.readStringUntil('\n');
-    cmd.trim();
-    return cmd;
-}
-
-// PROCESAMIENTO DE COMANDOS
-// =======================================================================
-void processCommand(const String &cmd)
-{
-    if (cmd == "HOME")
-    {
-        CMD_SERIAL.println("HOMING_STARTED");
-        // arrancar homing acá
-    }
-    else if (cmd == "STATUS")
-    {
-        CMD_SERIAL.println("READY");
+        if (cmd == "HOME")
+        {
+            Serial1.println("HOMING_STARTED");
+        }
+        else if (cmd == "STATUS")
+        {
+            Serial1.println("READY");
+        }
     }
 }
 
