@@ -1,0 +1,9 @@
+#line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\UART\\UART--Command\\.vscode\\extensions.json"
+{
+    "recommendations": [
+        "ms-python.python",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-python.vscode-pylance",
+        "paulober.pico-w-go"
+    ]
+}
