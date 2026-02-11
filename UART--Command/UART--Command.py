@@ -1,14 +1,26 @@
 """
-🔹 MASTER RP2040 PICO: ENVÍO DE COMANDOS UART A ZERO 🔹
-  - Solicita al usuario un comando.
-  - Envía comando: "^HOME" al Zero vía UART.
-  - Espera y muestra mensajes de estado enviados por la Zero: "HOMING_STARTED".
-  - Comunicación bidireccional con Zero a través de UART (TX=GPIO0, RX=GPIO1).
-  - Permite mandar comandos via serial y sincronización de secuencias.
-  K. Michalsky – 11.2025
+========================================================================
+              🔸 U A R T  -  C O M M A N D  ( S C A R A )🔸 
+========================================================================
+  Archivo    : UART_Command.ino
+  Autor      : Klaus Michalsky
+  Fecha      : Feb-2026
 
-------------------------------------------------------------
- Esquema de conexiones UART y alimentación:
+  DESCRIPCION
+-----------------------------------------------------------------------
+  - Recibe comandos UART desde un Raspberry Pi Pico.
+  - Comandos esperados: "HOME" → inicia homing, "STATUS" → responde estado.
+  - Envía mensajes de estado: "HOMING_STARTED", "READY".
+  - Comunicación bidireccional usando Serial1 (TX=GPIO0, RX=GPIO1) y Serial USB para debug.
+  - Ideal para pruebas de comunicación UART entre RP2040 y Pico.
+
+
+  HARDWARE
+-----------------------------------------------------------------------
+  MCU     : RP2040-Zero Y Raspberry Pi Pico
+
+ Esquema de conexiones UART y alimentación / Baudrate = 115200:
+-----------------------------------------------------------------------
 
  ┌──────────────┐                      ┌──────────────────┐
  │ Raspberry Pi │                      │ RP2040 Zero      │
@@ -20,13 +32,10 @@
  │ VBUS (5V) ───────────────── VBUS (5V)│
  └──────────────┘                      └──────────────────┘
 
-
-------------------------------------------------------------
- Configuración de pines usada:
-   UART TX = GPIO0
-   UART RX = GPIO1
-   Baudrate = 115200
-------------------------------------------------------------
+  ESTADO
+-----------------------------------------------------------------------
+  ✅ Funcional
+========================================================================
 """
 
 from machine import UART, Pin
