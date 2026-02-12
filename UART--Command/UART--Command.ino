@@ -1,7 +1,7 @@
 // ========================================================================
 //               🔸 U A R T  -  C O M M A N D  ( S C A R A )🔸
 // ========================================================================
-//  Archivo    : UART_Command.ino
+//  Archivo    : UART_Command.ino (simplified)
 //  Autor      : Klaus Michalsky
 //  Fecha      : Feb-2026
 //
